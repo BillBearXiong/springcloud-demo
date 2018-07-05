@@ -1,0 +1,29 @@
+server:
+  port: 1100
+#spring:  从本地读取配置文件
+  #cloud:
+    #config:
+      #server:
+        #native:
+          #search-locations: classpath:/shared
+  #profiles:
+    #active: native
+spring:
+  application:
+    name: book-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/BillBearXiong/springcloud-demo
+          search-paths: respo
+          username: 373109416@qq.com
+      label: master
+
+
+
+
+#eureka:
+  #client:
+    #service-url:
+       #defaultZone: http://localhost:1001/eureka/,http://localhost:1000/eureka/
