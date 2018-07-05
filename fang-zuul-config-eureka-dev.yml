@@ -1,0 +1,9 @@
+zuul:
+  routes:
+    api-a:
+       path: /api-a/**
+       serviceId: FANG-DEMO-SERVICE-FEIGN-HYSTRIX
+    api-b:
+       path: /api-b/**
+       #serviceId: FANG-DEMO-SERVICE-FEIGN-HYSTRIX
+       url: http://localhost:7023
