@@ -2,7 +2,7 @@ zuul:
   routes:
     api-a:
        path: /api-a/**
-       serviceId: FANG-DEMO-SERVICE-HYSTRIX
+       serviceId: FANG-DEMO-PROVIDER
     api-b:
        path: /api-b/**
        #serviceId: FANG-DEMO-SERVICE-FEIGN-HYSTRIX
